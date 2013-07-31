@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9hN-W8-LiG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Splash - splash-->
+        <scene sceneID="2du-tR-Vib">
+            <objects>
+                <viewController storyboardIdentifier="splash" title="splash" id="gfA-Lq-SxI" customClass="splash" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S0E-DG-SmM">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="SEK-sL-09l" userLabel="splashLogo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="WGm-X2-zZ0" userLabel="splashLoader">
+                                <rect key="frame" x="0.0" y="188" width="320" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="sZ5-us-76g" userLabel="splashSupport">
+                                <rect key="frame" x="40" y="188" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sMK-cX-xPZ" userLabel="btnSplashSupport">
+                                <rect key="frame" x="120" y="416" width="82" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSplashSupport:" destination="gfA-Lq-SxI" eventType="touchUpInside" id="6f3-7s-yXD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aFf-Va-dr7"/>
+                    <connections>
+                        <outlet property="btnSplashSupport" destination="sMK-cX-xPZ" id="Boq-S9-448"/>
+                        <outlet property="splashLoader" destination="WGm-X2-zZ0" id="p4L-Ul-9gD"/>
+                        <outlet property="splashLogo" destination="SEK-sL-09l" id="0AA-nm-kJg"/>
+                        <outlet property="splashSupport" destination="sZ5-us-76g" id="djW-hA-uxY"/>
+                        <segue destination="2" kind="modal" identifier="begin" modalTransitionStyle="crossDissolve" id="vM8-R7-sGl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIF-fE-dPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="-54"/>
+        </scene>
+        <!--Xxiivv View Controller - start-->
+        <scene sceneID="5">
+            <objects>
+                <viewController storyboardIdentifier="start" title="start" id="2" customClass="xxiivvViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="ShH-h7-SZb" userLabel="uiFrame">
+                                <rect key="frame" x="0.0" y="156" width="142" height="109"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="GAV-Jd-jTf" userLabel="uiMilli1">
+                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="BMd-ik-AIu" userLabel="uiMilli2">
+                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="T4w-jm-4FK" userLabel="uiMilli3">
+                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="Juz-2g-mPG" userLabel="uiMilli4">
+                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="47S-6L-SbC" userLabel="uiOneth">
+                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="d1U-Tm-baq" userLabel="uiTenth">
+                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fkQ-hP-p4C" userLabel="uiHundredth">
+                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Im1-qq-MXI" userLabel="uiThousandth">
+                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="BRN-Qt-S1i" userLabel="bgFade">
+                                <rect key="frame" x="40" y="210" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="IO : OOIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c3M-an-q8X" userLabel="displayTime">
+                                <rect key="frame" x="119" y="166" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="IO : OOIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p0i-6p-1NY" userLabel="displayTimeCompressed">
+                                <rect key="frame" x="100" y="264" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="waL-a5-SxJ" userLabel="btnFill">
+                                <rect key="frame" x="123" y="252" width="73" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFill:" destination="2" eventType="touchUpInside" id="Il4-Ci-xNa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="Egg-4M-d3K" userLabel="uiSupport">
+                                <rect key="frame" x="40" y="210" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KEc-Xq-WO6" userLabel="btnSupport">
+                                <rect key="frame" x="123" y="252" width="73" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSupport:" destination="2" eventType="touchUpInside" id="pnJ-pv-hmX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1fE-oY-u7D"/>
+                    <connections>
+                        <outlet property="bgFade" destination="BRN-Qt-S1i" id="Yws-zn-0Ak"/>
+                        <outlet property="btnFill" destination="waL-a5-SxJ" id="wO1-dL-KY0"/>
+                        <outlet property="btnSupport" destination="KEc-Xq-WO6" id="QeN-qE-nDN"/>
+                        <outlet property="displayTime" destination="c3M-an-q8X" id="YoK-Jj-El5"/>
+                        <outlet property="displayTimeCompressed" destination="p0i-6p-1NY" id="1qe-ro-Fui"/>
+                        <outlet property="uiFrame" destination="ShH-h7-SZb" id="Ll5-fP-KxN"/>
+                        <outlet property="uiHundredth" destination="fkQ-hP-p4C" id="q3A-7z-zeZ"/>
+                        <outlet property="uiMilli1" destination="GAV-Jd-jTf" id="VTA-hc-M8z"/>
+                        <outlet property="uiMilli2" destination="BMd-ik-AIu" id="EbP-04-x0X"/>
+                        <outlet property="uiMilli3" destination="T4w-jm-4FK" id="8E0-j1-vyJ"/>
+                        <outlet property="uiMilli4" destination="Juz-2g-mPG" id="cIU-Vy-nAk"/>
+                        <outlet property="uiOneth" destination="47S-6L-SbC" id="bfT-ug-xEx"/>
+                        <outlet property="uiSupport" destination="Egg-4M-d3K" id="YR0-NE-0tg"/>
+                        <outlet property="uiTenth" destination="d1U-Tm-baq" id="bM7-W2-bm3"/>
+                        <outlet property="uiThousandth" destination="Im1-qq-MXI" id="BY5-fq-fVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="480" y="-54"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yzs-xw-WxU">
+            <objects>
+                <navigationController id="9hN-W8-LiG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" id="TrD-Gk-NrQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gfA-Lq-SxI" kind="relationship" relationship="rootViewController" id="w29-mI-pbR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmf-4I-Qed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-325" y="-54"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="splash" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/splash.h"/>
+            <relationships>
+                <relationship kind="action" name="btnSplashSupport:"/>
+                <relationship kind="outlet" name="btnSplashSupport" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="splashLoader" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="splashLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="splashSupport" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="xxiivvViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/xxiivvViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnFill:"/>
+                <relationship kind="action" name="btnSupport:"/>
+                <relationship kind="outlet" name="bgFade" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="btnFill" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnSupport" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="displayTime" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="uiFrame" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="uiHundredth" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="uiMilli1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="uiMilli2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="uiMilli3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="uiMilli4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="uiOneth" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="uiSupport" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="uiTenth" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="uiThousandth" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
