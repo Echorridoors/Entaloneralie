@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9hN-W8-LiG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9hN-W8-LiG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Splash - splash-->
@@ -9,11 +10,11 @@
             <objects>
                 <viewController storyboardIdentifier="splash" title="splash" id="gfA-Lq-SxI" customClass="splash" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S0E-DG-SmM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="SEK-sL-09l" userLabel="splashLogo">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="232"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="WGm-X2-zZ0" userLabel="splashLoader">
@@ -48,7 +49,7 @@
                         <outlet property="splashLoader" destination="WGm-X2-zZ0" id="p4L-Ul-9gD"/>
                         <outlet property="splashLogo" destination="SEK-sL-09l" id="0AA-nm-kJg"/>
                         <outlet property="splashSupport" destination="sZ5-us-76g" id="djW-hA-uxY"/>
-                        <segue destination="2" kind="modal" identifier="begin" modalTransitionStyle="crossDissolve" id="vM8-R7-sGl"/>
+                        <segue destination="2" kind="custom" identifier="skip" customClass="segueFade" id="vM8-R7-sGl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIF-fE-dPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,43 +61,43 @@
             <objects>
                 <viewController storyboardIdentifier="start" title="start" id="2" customClass="xxiivvViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="ShH-h7-SZb" userLabel="uiFrame">
-                                <rect key="frame" x="0.0" y="156" width="142" height="109"/>
+                                <rect key="frame" x="0.0" y="156" width="142" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="GAV-Jd-jTf" userLabel="uiMilli1">
-                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <rect key="frame" x="89" y="220" width="142" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="BMd-ik-AIu" userLabel="uiMilli2">
-                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <rect key="frame" x="89" y="220" width="142" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="T4w-jm-4FK" userLabel="uiMilli3">
-                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <rect key="frame" x="89" y="220" width="142" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="Juz-2g-mPG" userLabel="uiMilli4">
-                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <rect key="frame" x="89" y="220" width="142" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="47S-6L-SbC" userLabel="uiOneth">
-                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <rect key="frame" x="89" y="220" width="142" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="d1U-Tm-baq" userLabel="uiTenth">
-                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <rect key="frame" x="89" y="220" width="142" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fkQ-hP-p4C" userLabel="uiHundredth">
-                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <rect key="frame" x="89" y="220" width="142" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Im1-qq-MXI" userLabel="uiThousandth">
-                                <rect key="frame" x="89" y="220" width="142" height="109"/>
+                                <rect key="frame" x="89" y="220" width="142" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="BRN-Qt-S1i" userLabel="bgFade">
@@ -180,7 +181,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yzs-xw-WxU">
             <objects>
-                <navigationController id="9hN-W8-LiG" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="9hN-W8-LiG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" id="TrD-Gk-NrQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -196,39 +197,6 @@
             <point key="canvasLocation" x="-325" y="-54"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="splash" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/splash.h"/>
-            <relationships>
-                <relationship kind="action" name="btnSplashSupport:"/>
-                <relationship kind="outlet" name="btnSplashSupport" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="splashLoader" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="splashLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="splashSupport" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="xxiivvViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/xxiivvViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnFill:"/>
-                <relationship kind="action" name="btnSupport:"/>
-                <relationship kind="outlet" name="bgFade" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="btnFill" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="btnSupport" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="displayTime" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="uiFrame" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="uiHundredth" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="uiMilli1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="uiMilli2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="uiMilli3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="uiMilli4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="uiOneth" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="uiSupport" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="uiTenth" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="uiThousandth" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

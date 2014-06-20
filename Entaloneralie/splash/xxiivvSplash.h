@@ -17,4 +17,6 @@
 
 @end
 
+NSString *supportUrl;
+
 NSTimer *blinker;

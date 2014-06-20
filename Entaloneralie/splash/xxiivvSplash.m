@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 XXIIVV. All rights reserved.
 //
 
-#import "splash.h"
-
+#import "xxiivvSplash.h"
 
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
@@ -19,6 +18,13 @@ AVAudioPlayer *audioPlayerSplash;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	[self start];
+}
+
+-(void)start
+{
+	supportUrl = @"http://wiki.xxiivv.com/Entaloneralie";
+	
 	[self splashTemplate];
 	[self splashAnimate];
 	[self audioPlayerSplash:@"splash.tune.wav"];
@@ -69,17 +75,16 @@ AVAudioPlayer *audioPlayerSplash;
 	else{
 		self.splashLoader.alpha = 0;
 	}
-	
 }
 
 - (void) splashClose
 {
 	[blinker invalidate];
-	[self performSegueWithIdentifier: @"begin" sender: self];
+	[self performSegueWithIdentifier: @"skip" sender: self];
 }
 
 - (IBAction)btnSplashSupport:(id)sender {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://wiki.xxiivv.com/Entaloneralie+support"]];
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:supportUrl]];
 }
 
 -(void)setImage :(UIImageView*)viewName :(NSString*)imageName
