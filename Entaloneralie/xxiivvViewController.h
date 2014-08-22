@@ -9,29 +9,28 @@
 #import <UIKit/UIKit.h>
 
 @interface xxiivvViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIView *ratio1View;
+@property (strong, nonatomic) IBOutlet UIView *ratio2View;
+@property (strong, nonatomic) IBOutlet UIView *ratio3View;
+@property (strong, nonatomic) IBOutlet UIView *ratio4View;
+@property (strong, nonatomic) IBOutlet UIView *wrapperView;
+@property (strong, nonatomic) IBOutlet UIView *ratio5View;
+@property (strong, nonatomic) IBOutlet UIView *ratio6View;
+@property (strong, nonatomic) IBOutlet UIView *ratio7View;
+@property (strong, nonatomic) IBOutlet UIView *ratio8View;
+@property (strong, nonatomic) IBOutlet UIView *ratio9View;
 
-@property (strong, nonatomic) IBOutlet UIImageView *bgFade;
+@property (strong, nonatomic) IBOutlet UIView *borderTopView;
+@property (strong, nonatomic) IBOutlet UIView *borderBottomView;
+@property (strong, nonatomic) IBOutlet UIView *borderRightView;
+@property (strong, nonatomic) IBOutlet UIView *borderLeftView;
 
-@property (strong, nonatomic) IBOutlet UIImageView *uiFrame;
-@property (strong, nonatomic) IBOutlet UIImageView *uiOneth;
-@property (strong, nonatomic) IBOutlet UIImageView *uiTenth;
-@property (strong, nonatomic) IBOutlet UIImageView *uiHundredth;
-@property (strong, nonatomic) IBOutlet UIImageView *uiThousandth;
+@property (strong, nonatomic) IBOutlet UILabel *ratio1Label;
+@property (strong, nonatomic) IBOutlet UILabel *ratio2Label;
+@property (strong, nonatomic) IBOutlet UILabel *ratio3Label;
+@property (strong, nonatomic) IBOutlet UILabel *ratio4Label;
 
-@property (strong, nonatomic) IBOutlet UIImageView *uiMilli1;
-@property (strong, nonatomic) IBOutlet UIImageView *uiMilli2;
-@property (strong, nonatomic) IBOutlet UIImageView *uiMilli3;
-@property (strong, nonatomic) IBOutlet UIImageView *uiMilli4;
-
-@property (strong, nonatomic) IBOutlet UILabel *displayTime;
-@property (strong, nonatomic) IBOutlet UILabel *displayTimeCompressed;
-
-@property (strong, nonatomic) IBOutlet UIButton *btnFill;
-
-@property (strong, nonatomic) IBOutlet UIImageView *uiSupport;
-@property (strong, nonatomic) IBOutlet UIButton *btnSupport;
-
-
+@property (strong, nonatomic) IBOutlet UIView *ratio4NegView;
 
 @end
 
