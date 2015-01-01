@@ -92,8 +92,8 @@ int timeMode = 0;
 - (void) timeUpdate
 {
 	screen = [[UIScreen mainScreen] bounds];
-	float screenWidth = screen.size.width;
-	float screenHeight = screen.size.height;
+//	float screenWidth = screen.size.width;
+//	float screenHeight = screen.size.height;
 	float tileSize = screen.size.width/8;
 	float wrapperWidth = self.wrapperView.frame.size.width;
 	float wrapperHeight = self.wrapperView.frame.size.height;

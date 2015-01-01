@@ -24,8 +24,8 @@ AVAudioPlayer *audioPlayerSplash;
 -(void)start
 {
 	// TODO: Remove when release
-	[self splashClose];
-	return;
+//	[self splashClose];
+//	return;
 	
 	supportUrl = @"http://wiki.xxiivv.com/Entaloneralie";
 	
