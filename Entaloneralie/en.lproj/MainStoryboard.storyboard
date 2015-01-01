@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A299l" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9hN-W8-LiG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9hN-W8-LiG">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Splash - splash-->
+        <!--splash-->
         <scene sceneID="2du-tR-Vib">
             <objects>
                 <viewController storyboardIdentifier="splash" title="splash" id="gfA-Lq-SxI" customClass="splash" sceneMemberID="viewController">
@@ -56,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="81" y="-54"/>
         </scene>
-        <!--Xxiivv View Controller - start-->
+        <!--start-->
         <scene sceneID="5">
             <objects>
                 <viewController storyboardIdentifier="start" title="start" id="2" customClass="xxiivvViewController" sceneMemberID="viewController">
@@ -64,95 +64,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view appearanceType="aqua" contentMode="scaleToFill" id="KUp-Ni-xkU" userLabel="wrapperView">
+                            <view contentMode="scaleToFill" id="KUp-Ni-xkU" userLabel="wrapperView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="qas-Qh-HN2" userLabel="borderTopView">
+                                    <view contentMode="scaleToFill" id="qas-Qh-HN2" userLabel="borderTopView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="FfS-Ya-OZ4" userLabel="borderBottomView">
+                                    <view contentMode="scaleToFill" id="FfS-Ya-OZ4" userLabel="borderBottomView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="JVP-eV-IQX" userLabel="borderRightView">
+                                    <view contentMode="scaleToFill" id="JVP-eV-IQX" userLabel="borderRightView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="KMT-Oq-ydj" userLabel="borderLeftView">
+                                    <view contentMode="scaleToFill" id="KMT-Oq-ydj" userLabel="borderLeftView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0do-NC-hJV" userLabel="ratio1Label">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0do-NC-hJV" userLabel="ratio1Label">
                                         <rect key="frame" x="139" y="274" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0p9-Nr-hzb" userLabel="ratio2Label">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0p9-Nr-hzb" userLabel="ratio2Label">
                                         <rect key="frame" x="139" y="274" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Voq-7n-q5s" userLabel="ratio3Label">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Voq-7n-q5s" userLabel="ratio3Label">
                                         <rect key="frame" x="139" y="274" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="94A-uK-NYO" userLabel="ratio4Label">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="94A-uK-NYO" userLabel="ratio4Label">
                                         <rect key="frame" x="139" y="274" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="Pa0-H2-Gat" userLabel="ratio5View">
+                                    <view contentMode="scaleToFill" id="Pa0-H2-Gat" userLabel="ratio5View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="8nS-SU-gUL" userLabel="ratio6View">
+                                    <view contentMode="scaleToFill" id="8nS-SU-gUL" userLabel="ratio6View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="LHb-Pa-GMT" userLabel="ratio7View">
+                                    <view contentMode="scaleToFill" id="LHb-Pa-GMT" userLabel="ratio7View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="IX5-nl-10W" userLabel="ratio8View">
+                                    <view contentMode="scaleToFill" id="IX5-nl-10W" userLabel="ratio8View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="AAz-jv-OAG" userLabel="ratio9View">
+                                    <view contentMode="scaleToFill" id="AAz-jv-OAG" userLabel="ratio9View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="KHR-XC-NhX" userLabel="ratio4View">
+                                    <view contentMode="scaleToFill" id="KHR-XC-NhX" userLabel="ratio4View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="zap-CF-nIY" userLabel="ratio3View">
+                                    <view contentMode="scaleToFill" id="zap-CF-nIY" userLabel="ratio3View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="d9W-yo-7Eo" userLabel="ratio2View">
+                                    <view contentMode="scaleToFill" id="d9W-yo-7Eo" userLabel="ratio2View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="BqH-bp-b3x" userLabel="ratio1View">
+                                    <view contentMode="scaleToFill" id="BqH-bp-b3x" userLabel="ratio1View">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </view>
-                                    <view appearanceType="aqua" contentMode="scaleToFill" id="zmY-fF-Cy8" userLabel="ratio4NegView">
+                                    <view contentMode="scaleToFill" id="zmY-fF-Cy8" userLabel="ratio4NegView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Se6-Nx-cyz">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Se6-Nx-cyz">
                                                 <rect key="frame" x="-66" y="43" width="320" height="568"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </imageView>
@@ -161,6 +161,23 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mat-9T-5CB" userLabel="modeLabel">
+                                <rect key="frame" x="139" y="274" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yEk-Ec-dtL" userLabel="modeToggleButton">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="modeToggleButton:" destination="2" eventType="touchUpInside" id="lR7-Z3-HQm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -170,6 +187,8 @@
                         <outlet property="borderLeftView" destination="KMT-Oq-ydj" id="xVP-Ef-LPe"/>
                         <outlet property="borderRightView" destination="JVP-eV-IQX" id="aCR-pn-nx7"/>
                         <outlet property="borderTopView" destination="qas-Qh-HN2" id="RpW-yg-41M"/>
+                        <outlet property="modeLabel" destination="Mat-9T-5CB" id="OaM-XK-V7v"/>
+                        <outlet property="modeToggleButton" destination="yEk-Ec-dtL" id="9b0-ho-rIb"/>
                         <outlet property="ratio1Label" destination="0do-NC-hJV" id="jXx-06-bJ1"/>
                         <outlet property="ratio1View" destination="BqH-bp-b3x" id="jeR-JF-KYC"/>
                         <outlet property="ratio2Label" destination="0p9-Nr-hzb" id="HNP-tT-bmh"/>

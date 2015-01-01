@@ -10,29 +10,29 @@
 	<string>Entaloneralie</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>28FCF5DA-4C3D-49E1-A8F2-BA9831A59DDE</key>
+		<key>790137F01E0D7881EAA2536A5F2C4936AAE4A9D6</key>
 		<string>https://github.com/aliceffekt/Entaloneralie.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Entaloneralie.xcodeproj/project.xcworkspace</string>
+	<string>Entaloneralie.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>28FCF5DA-4C3D-49E1-A8F2-BA9831A59DDE</key>
+		<key>790137F01E0D7881EAA2536A5F2C4936AAE4A9D6</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/aliceffekt/Entaloneralie.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>28FCF5DA-4C3D-49E1-A8F2-BA9831A59DDE</string>
+	<string>790137F01E0D7881EAA2536A5F2C4936AAE4A9D6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>28FCF5DA-4C3D-49E1-A8F2-BA9831A59DDE</string>
+			<string>790137F01E0D7881EAA2536A5F2C4936AAE4A9D6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Entaloneralie</string>
 		</dict>

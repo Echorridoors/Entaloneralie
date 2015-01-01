@@ -13,9 +13,14 @@
 
 AVAudioPlayer *audioPlayerSounds;
 
-@interface xxiivvViewController ()
-@end
+int timeMode = 0;
 
+@interface xxiivvViewController ()
+
+@property (strong, nonatomic) IBOutlet UIButton *modeToggleButton;
+@property (strong, nonatomic) IBOutlet UILabel *modeLabel;
+
+@end
 
 @implementation xxiivvViewController
 
@@ -38,7 +43,6 @@ AVAudioPlayer *audioPlayerSounds;
 	[self timeUpdate];
 }
 
-
 - (void) tmplStart
 {
 	screen = [[UIScreen mainScreen] bounds];
@@ -59,13 +63,30 @@ AVAudioPlayer *audioPlayerSounds;
 	self.borderBottomView.backgroundColor = [UIColor whiteColor];
 	self.borderBottomView.frame = CGRectMake(0, self.wrapperView.frame.size.height-1, self.wrapperView.frame.size.width, 1);
 	
+	self.modeToggleButton.frame = CGRectMake(0, 0, screenWidth, screenHeight);
+	self.modeLabel.frame = CGRectMake(tileSize, tileSize, screenWidth-(2*tileSize), screenHeight-(2*tileSize));
+	self.modeLabel.backgroundColor = [UIColor whiteColor];
+	self.modeLabel.textColor = [UIColor blackColor];
+	self.modeLabel.alpha = 0;
 }
-
 
 - (void) timeStart
 {
 	NSLog(@"Time: Start");
 	[NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(timeUpdate) userInfo:nil repeats:YES];
+}
+
+- (IBAction)modeToggleButton:(id)sender
+{
+	self.modeLabel.alpha = 1;
+	[self fadeOut:self.modeLabel d:0 t:0.5];
+	
+	timeMode += 1;
+	if( timeMode > 2 ){
+		timeMode = 0;
+	}
+	
+	[self audioPlayerSounds:@"sounds.click.mp3"];
 }
 
 - (void) timeUpdate
@@ -97,13 +118,21 @@ AVAudioPlayer *audioPlayerSounds;
 	float secondsInDay = 86400;
 	float secondsPast = t_seco + (60*t_minu) + (t_hour*60*60);
 	
-	// 12 hours format
-	secondsInDay = 86400/2;
-	secondsPast = t_seco + (60*t_minu) + ((t_hour % 12)*60*60);
-	
-	// Test
-	secondsInDay = 60000;
-	secondsPast = (t_seco * 1000) + t_milli;
+	if( timeMode == 0 ){
+		// Minutes
+		secondsInDay = 60000;
+		secondsPast = (t_seco * 1000) + t_milli;
+	}
+	else if( timeMode == 1 ){
+		// Hour
+		secondsInDay = 3600000;
+		secondsPast = (t_minu * 60 * 1000) + (t_seco * 1000) + t_milli;
+	}
+	else{
+		// 12 hours format
+		secondsInDay = 86400/2;
+		secondsPast = t_seco + (60*t_minu) + ((t_hour % 12)*60*60);
+	}
 
 	float perc1 = (int)((secondsPast/secondsInDay) * 1000);
 	float perc2 = (int)((secondsPast/(secondsInDay/2)) *1000) % 1000;
@@ -115,7 +144,7 @@ AVAudioPlayer *audioPlayerSounds;
 	float perc8 = (int)((secondsPast/(secondsInDay/128)) *1000) % 1000;
 	float perc9 = (int)((secondsPast/(secondsInDay/256)) *1000) % 1000;
 	
-	NSLog(@"%f : %f : %f : %f : %f : %f : %f : %f : %f",perc1,perc2,perc3,perc4,perc5,perc6,perc7,perc8,perc9 );
+//	NSLog(@"%f : %f : %f : %f : %f : %f : %f : %f : %f",perc1,perc2,perc3,perc4,perc5,perc6,perc7,perc8,perc9 );
 	
 	float ratio1PosY = (perc1/1000)*wrapperHeight;
 	self.ratio1View.backgroundColor = [UIColor whiteColor];
